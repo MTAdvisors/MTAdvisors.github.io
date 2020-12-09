@@ -252,7 +252,7 @@
 
 															<div class="row justify-content-center mt-2">
 																<div class="col-12 col-md-8">
-																	<input type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																	<input disabled type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
 																</div>
 															</div>
 														</form>
@@ -371,6 +371,7 @@
 			}
 
 			$(async function () {
+				$('#enviar').attr('disabled', true);
 
 				let limit = await CheckLimit();
 				if(limit){
@@ -415,7 +416,7 @@
 
 				$('#enviar').click(async function (e) {
 					e.preventDefault();
-
+					return;
 					$('#enviar').attr('disabled', true);
 					let cant = await GetCantidadLimit();
 					if(cant >= 4800){
