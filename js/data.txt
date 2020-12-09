@@ -1,0 +1,230 @@
+Evaluaciones
+
+Total: 524
+
+Ziracuaretiro: 1 
+Tzintzuntzan: 1 
+Chavinda: 1 
+Cherán: 1 
+Coeneo: 1 
+Queréndaro: 1 
+Coahuayana: 1 
+Salvador Escalante: 1 
+Zinapécuaro: 1 
+Quiroga: 2 
+Santa Ana Maya: 2 
+Aquila: 2 
+Zacapu: 2 
+Marcos Castellanos: 2 
+Huetamo: 2 
+Penjamillo: 2 
+Ocampo: 2 
+Sahuayo: 2 
+Chinicuila: 2 
+Angamacutiro: 3 
+Cotija: 3 
+Los Reyes: 3 
+Cuitzeo: 3 
+Indaparapeo: 3 
+Tangancícuaro: 3 
+Múgica: 3 
+Pajacuarán: 3 
+Buenavista: 4 
+Tarímbaro: 4 
+Tocumbo: 4 
+Villamar: 5 
+Gabriel Zamora: 5 
+Taretan: 5 
+Charo: 5 
+Zamora: 5 
+Jiquilpan: 6 
+Senguio: 6 
+Arteaga: 6 
+Aguililla: 6 
+Contepec: 6 
+Carácuaro: 7 
+Jungapeo: 10 
+Tingüindín: 10 
+Apatzingán: 12 
+Maravatío: 13 
+Acuitzio: 13 
+Pátzcuaro: 16 
+Coalcomán de Vázquez Pallares: 20 
+Morelia (Educación especial): 22 
+Morelia: 28 
+Tepalcatepec: 29 
+La Piedad: 30 
+Hidalgo: 34 
+Tuxpan: 34 
+Lázaro Cárdenas: 40 
+Zitácuaro: 42 
+Uruapan: 44
+
+/////////////////////////////////////////
+
+C1
+
+Total: 1008
+
+Chavinda: 1
+Pajacuarán: 1
+Nuevo Urecho: 1
+Tzintzuntzan: 1
+Briseñas: 1
+Peribán: 1
+Irimbo: 1
+Sahuayo: 1
+Parácuaro: 1
+Coahuayana: 1
+Múgica: 1
+Ario: 2
+Morelia: 2
+Los Reyes: 2
+Salvador Escalante: 3
+Maravatío: 3
+Aquila: 4
+Paracho: 5
+Cotija: 5
+Tanhuato: 5
+Tocumbo: 6
+Tangancícuaro: 6
+Taretan: 6
+Marcos Castellanos: 7
+Chinicuila: 7
+Aguililla: 7
+Villamar: 7
+Buenavista: 7
+Penjamillo: 8
+Zamora: 8
+Vista Hermosa: 9
+Contepec: 9
+Ocampo: 9
+Huetamo: 11
+Tingüindín: 12
+Gabriel Zamora: 13
+Carácuaro: 16
+Jiquilpan: 19
+Jungapeo: 20
+Pátzcuaro: 25
+Arteaga: 27
+Apatzingán: 30
+Coalcomán de Vázquez Pallares: 37
+Uruapan: 50
+Tepalcatepec: 57
+Lázaro Cárdenas: 65
+Tuxpan: 69
+La Piedad: 69
+Zitácuaro: 80
+Hidalgo: 105
+Acuitzio: 165
+
+/////////////////////////////////////////
+
+C2
+Total:  876
+
+Morelia: 1
+Múgica: 1
+Chavinda: 1
+Sahuayo: 1
+Peribán: 1
+Tzintzuntzan: 1
+Nuevo Urecho: 1
+Aporo: 1
+Cuitzeo: 1
+Briseñas: 1
+Pajacuarán: 1
+Los Reyes: 1
+Coahuayana: 1
+Cojumatlán de Régules: 1
+Ario: 2
+Maravatío: 2
+Salvador Escalante: 2
+Turicato: 2
+Aquila: 3
+Paracho: 4
+Tangancícuaro: 4
+Tocumbo: 5
+Taretan: 5
+Cotija: 5
+Buenavista: 5
+Huetamo: 5
+Chinicuila: 6
+Vista Hermosa: 6
+Ocampo: 6
+Zamora: 7
+Penjamillo: 7
+Tanhuato: 7
+Villamar: 8
+Contepec: 8
+Marcos Castellanos: 8
+Aguililla: 9
+Carácuaro: 9
+Tingüindín: 12
+Gabriel Zamora: 13
+Jungapeo: 16
+Jiquilpan: 19
+Apatzingán: 23
+Pátzcuaro: 25
+Arteaga: 25
+Coalcomán de Vázquez Pallares: 29
+La Piedad: 41
+Uruapan: 44
+Tepalcatepec: 51
+Lázaro Cárdenas: 55
+Tuxpan: 56
+Zitácuaro: 76
+Hidalgo: 90
+Acuitzio: 162
+
+/////////////////////////
+
+C3
+
+Total:  581
+
+Cojumatlán de Régules: 1
+Coahuayana: 1
+Briseñas: 1
+Tzintzuntzan: 1
+Peribán: 1
+Sahuayo: 1
+La Huacana: 1
+Tangancícuaro: 2
+Chinicuila: 2
+Aquila: 2
+Taretan: 2
+Cotija: 2
+Salvador Escalante: 2
+Ocampo: 3
+Vista Hermosa: 3
+Ario: 3
+Maravatío: 3
+Paracho: 3
+Tanhuato: 3
+Tocumbo: 4
+Aguililla: 4
+Marcos Castellanos: 4
+Penjamillo: 4
+Villamar: 5
+Zamora: 5
+Contepec: 6
+Buenavista: 6
+Huetamo: 7
+Gabriel Zamora: 7
+Jiquilpan: 8
+Tingüindín: 8
+Carácuaro: 10
+Arteaga: 12
+Jungapeo: 13
+Apatzingán: 17
+Pátzcuaro: 17
+Coalcomán de Vázquez Pallares: 22
+Uruapan: 31
+Tuxpan: 33
+Tepalcatepec: 34
+La Piedad: 44
+Hidalgo: 45
+Zitácuaro: 47
+Lázaro Cárdenas: 47
+Acuitzio: 104

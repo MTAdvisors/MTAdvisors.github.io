@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PNCE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<!-- Disable tap highlight on IE -->
+
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link href="./styles.css" rel="stylesheet" />
+		<link href="./custom-style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+			<div class="app-main pt-0">
+				<div class="app-main__outer">
+					<div class="app-main__inner">
+						<div class="tab-content mx-auto" style="max-width: 500px">
+							<div class="col-md-12">
+								<div class="tab-pane tabs-animation fade show active" id="tab-content-1" role="tabpanel">
+									<div class="main-card mb-3 card">
+										<div class="card-body px-0">
+											<div class="container">
+												<div class="py-3 text-center">
+													<img class="ml-2 mb-4" src="./asset/pnce-logo-2020.png" alt="" width="120" height="70" />
+													<p class="lead"></p>
+												</div>
+
+												<div class="row justify-content-center text-center">
+													<div class="col-12">
+														<h5 class="mb-3">"Inclusión" y "Feminidades y masculinidades"</h5>
+														<h6 class="mb-3">Ingrese el número de celular con el cual se registró para el taller del día viernes 4 de diciembre 2020 y conozca el ID de la sala de ZOOM.</h6>
+
+														<div class="divider-extra mb-3 mx-auto"></div>
+
+														<div class="row text-center" id="registro-cerrar">
+															<div class="col-12">
+																<h2 class="mx-auto" id="registro-cerrado">Ingrese su teléfono</h2>
+															</div>
+															<div class="col-12">
+																<p id="hidder-zoom">
+																</p>
+															</div>
+														</div>
+
+														<div class="divider-extra mb-3 mx-auto"></div>
+
+														<form id="form-pre-registro" class="needs-validation" novalidate>
+															<div class="row">
+																<div class="col-12 mb-3">
+																	<div class="form-group">
+																		<label for="celular">Celular</label>
+																		<input name="celular" type="tel" class="form-control text-center" id="pre-celular" placeholder="..." required />
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="row justify-content-center mt-2">
+																<div class="col-12 col-md-8">
+																	<input type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<div class="divider-extra my-3 mx-auto"></div>
+
+												<footer class="my-3 text-muted text-center text-small">
+													<!-- <p class="mb-1">© 2020 E-ADVISORS</p> -->
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			label {
+				font-size: 1rem;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.divider-extra {
+				width: 50%;
+				height: 1px;
+				background-color: #ced4da;
+			}
+
+			.k-radio:checked + .k-radio-label::after {
+				top: 2px !important;
+				left: 2px !important;
+			}
+
+			.k-radio-label {
+				margin-right: 20px;
+				margin-bottom: 0px;
+			}
+
+			@media (max-width: 575px) {
+				.form-group {
+					margin-bottom: 0px;
+				}
+
+				.form-group .col-sm-4,
+				.form-group .col-sm-10 {
+					margin-bottom: 1rem;
+				}
+			}
+
+			.custom-control-inline.custom-radio.pl-2 {
+				padding-left: 20px !important;
+			}
+
+			@media (max-width: 768px) {
+				.custom-control-inline.custom-radio.pl-2 {
+					flex-direction: column;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.app-main__inner {
+					padding-left: 0px !important;
+					padding-right: 0px !important;
+				}
+			}
+		</style>
+
+		
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+		<script>
+		</script>
+
+		<script>
+
+			const _fbConfig = firebaseConfig = {
+				apiKey: "AIzaSyDuxAbpeIZuqs8No_wiPJQLrc6mZvXsb1M",
+				authDomain: "pnce-f967b.firebaseapp.com",
+				databaseURL: "https://pnce-f967b.firebaseio.com",
+				projectId: "pnce-f967b",
+				storageBucket: "pnce-f967b.appspot.com",
+				messagingSenderId: "78250519178",
+				appId: "1:78250519178:web:9300a88cb10db71487db73"
+			};
+
+			firebase.initializeApp(_fbConfig);
+
+			function _6x4gfbs(e){
+				// tacambaro, huetamo, zitacuaro, hidalgo, Tingüindín, Pátzcuaro
+				// let _m = ['Tacámbaro', 'Huetamo', 'Zitácuaro', 'Hidalgo', 'Tingüindín', 'Pátzcuaro'];
+				let _m = ['Tacámbaro', 'Huetamo', 'Lázaro Cárdenas', 'Uruapan', 'Pátzcuaro'];
+				return (_m.includes(e))?'535 545 8722':'466 265 8912';
+			}
+
+			$(function () {
+				$('#enviar').click(async function (e) { 
+					e.preventDefault();
+					$('#enviar').attr('disabled', true);
+					let celular = $('#pre-celular').val();
+					celular = celular.replace(/\s+/g, '');
+					console.log(celular);
+
+					let dbRef = firebase.database();
+					dbRef.ref(`registroPR`).orderByChild('celular').equalTo(celular).once('value', async function(reg){
+						$('#enviar').attr('disabled', false);
+						if(reg.val() != null){
+							// console.log(reg.val());
+							let allRegs = reg.val();
+							let keys = Object.getOwnPropertyNames(reg.val());
+							
+							let name = allRegs[keys[0]].nombre;
+							let lugar = allRegs[keys[0]].municipio;
+
+							$('#registro-cerrado').text(name);
+
+							$('#hidder-zoom').html(`
+								El ID de su sesión de ZOOM es <b>${_6x4gfbs(lugar)}</b>
+							`);
+
+							console.log('Esta registrado');
+						}else{
+							console.log('Sin registro');
+							$('#registro-cerrado').text('Sin registro');
+							$('#hidder-zoom').empty();
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

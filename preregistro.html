@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PNCE PRE-REGISTRO</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<!-- Disable tap highlight on IE -->
+
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link href="./styles.css" rel="stylesheet" />
+		<link href="./custom-style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+			<div class="app-main pt-0">
+				<div class="app-main__outer">
+					<div class="app-main__inner">
+						<div class="tab-content mx-auto" style="max-width: 500px">
+							<div class="col-md-12">
+								<div class="tab-pane tabs-animation fade show active" id="tab-content-1" role="tabpanel">
+									<div class="main-card mb-3 card">
+										<div class="card-body px-0">
+											<div class="container">
+												<div class="py-3 text-center">
+													<img class="ml-2 mb-4" src="./asset/pnce-logo-2020.png" alt="" width="120" height="70" />
+													<p class="lead"></p>
+												</div>
+
+												<div class="row justify-content-center text-center">
+													<div class="col-12">
+														<h5 class="mb-3">"Introducción a la Enseñanza Digital y Habilidades Socioemocionales"</h5>
+														<h6 class="mb-3">Pre registro para el taller del día lunes 23 de noviembre 2020</h6>
+
+														<div class="divider-extra mb-3 mx-auto"></div>
+														<div class="text-center">
+															<h6 class="mb-3 font-weight-bold">Conectarse a su capacitación</h6>
+															<p class="text-justify">
+																Su capacitación se llevará a cabo a través de la plataforma ZOOM, para poder acceder a ella utilice el ID: <b>535 545 8722</b> o haga
+																click en el siguiente enlace:
+															</p>
+															<p>
+																<a href="https://us02web.zoom.us/j/5355458722" target="_blank">Conectarse directamente</a>
+															</p>
+														</div>
+														<div class="divider-extra mx-auto"></div>
+
+														<form id="form-pre-registro" class="needs-validation" novalidate>
+															<div class="row">
+																<div class="col-12 mb-3">
+																	<div class="form-group">
+																		<label for="nombre">Nombre completo</label>
+																		<input name="nombre" type="text" class="form-control text-center" id="pre-nombre" placeholder="..." autofocus required />
+																		<!-- <small class="form-text text-muted">Extra small text</small> -->
+																	</div>
+
+																	<div class="form-group">
+																		<label for="genero">Género</label>
+																		<select name="genero" id="pre-genero" class="form-control text-center">
+																			<option value="Femenino">Femenino</option>
+																			<option value="Masculino">Masculino</option>
+																			<option value="Otro">Otro</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="puesto">Función</label>
+																		<select name="puesto" id="pre-puesto" class="form-control text-center">
+																			<option value="Jefa/e de sector">Jefa/e de sector</option>
+																			<option value="Supervisora/or">Supervisora/or</option>
+																			<option value="Jefa/e de Enseñanza">Jefa/e de Enseñanza</option>
+																			<option value="Asesora/or Técnico Pedagógico">Asesora/or Técnico Pedagógico</option>
+																			<option value="Directiva/o">Directiva/o</option>
+																			<option value="Docente">Docente</option>
+																			<option value="Madre/Padre de familia y/o tutor">Madre/Padre de familia y/o tutor</option>
+																			<option value="Otro">Otro</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="rfc">RFC o CURP</label>
+																		<input name="rfc" type="text" class="form-control text-center" id="pre-rfc" placeholder="..." required/>
+																		<small class="form-text text-muted d-none" id="pre-rfc-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="celular">Celular</label>
+																		<input name="celular" type="tel" class="form-control text-center" id="pre-celular" placeholder="..." required />
+																	</div>
+
+																	<div class="form-group">
+																		<label for="correo">Correo electrónico</label>
+																		<input name="correo" type="text" class="form-control text-center" id="pre-correo" placeholder="..." required />
+																		<small class="form-text text-muted d-none" id="pre-correo-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="cct">CCT</label>
+																		<input name="cct" type="text" class="form-control text-center" id="pre-cct" placeholder="..." required />
+																		<small class="form-text text-muted d-none" id="pre-cct-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="municipio">Municipio</label>
+																		<select name="municipio" id="pre-municipio" class="form-control text-center">
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="localidad">Localidad</label>
+																		<input name="localidad" type="text" class="form-control text-center" id="pre-localidad" placeholder="..." required />
+																		<!-- <select name="localidad" id="pre-localidad" class="form-control text-center">
+																		</select> -->
+																	</div>
+
+																	<div class="form-group hidder-familia">
+																		<label for="nivel">Nivel escolar</label>
+																		<select name="nivel" id="pre-nivel" class="form-control text-center">
+																			<option value="Preescolar">Preescolar</option>
+																			<option value="Primaria">Primaria</option>
+																			<option value="Secundaria">Secundaria</option>
+																			<option value="Educación Especial">Educación Especial</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group hidder-familia">
+																		<label for="subnivel">Subnivel</label>
+																		<select name="subnivel" id="pre-subnivel" class="form-control text-center">
+																			<option value="General">General</option>
+																			<option value="Indígena">Indígena</option>
+																		</select>
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="row justify-content-center mt-2">
+																<div class="col-12 col-md-8">
+																	<input type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<div class="divider-extra mt-3 mb-3 mx-auto d-none"></div>
+												<div class="text-center d-none">
+													<h6 class="mb-3 font-weight-bold">Conectarse a su capacitación</h6>
+													<p class="text-justify">
+														Su capacitación se llevará a cabo a través de la plataforma ZOOM, para poder acceder a ella utilice el ID: <b>535 545 8722</b> o haga click en
+														el siguiente enlace:
+													</p>
+													<p>
+														<a href="https://us02web.zoom.us/j/5355458722" target="_blank">Conectarse directamente</a>
+													</p>
+												</div>
+												<div class="divider-extra mx-auto"></div>
+
+												<footer class="my-3 text-muted text-center text-small">
+													<!-- <p class="mb-1">© 2020 E-ADVISORS</p> -->
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			label {
+				font-size: 1rem;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.divider-extra {
+				width: 50%;
+				height: 1px;
+				background-color: #ced4da;
+			}
+
+			.k-radio:checked + .k-radio-label::after {
+				top: 2px !important;
+				left: 2px !important;
+			}
+
+			.k-radio-label {
+				margin-right: 20px;
+				margin-bottom: 0px;
+			}
+
+			@media (max-width: 575px) {
+				.form-group {
+					margin-bottom: 0px;
+				}
+
+				.form-group .col-sm-4,
+				.form-group .col-sm-10 {
+					margin-bottom: 1rem;
+				}
+			}
+
+			.custom-control-inline.custom-radio.pl-2 {
+				padding-left: 20px !important;
+			}
+
+			@media (max-width: 768px) {
+				.custom-control-inline.custom-radio.pl-2 {
+					flex-direction: column;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.app-main__inner {
+					padding-left: 0px !important;
+					padding-right: 0px !important;
+				}
+			}
+		</style>
+
+		<script type="text/javascript" src="./main.js?v=1"></script>
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/localidades.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script>
+			let niveles = {
+				'Preescolar': ['General', 'Indígena'],
+				'Primaria': ['General', 'Indígena'],
+				'Secundaria': ['General', 'Técnica', 'Tele secundaria'],
+				'Educación Especial': ['CAM', 'USAER'],
+			}
+
+			let municipios = [
+				'Acuitzio',
+				'Aguililla',
+				'Angamacutiro',
+				'Angangueo',
+				'Apatzingán',
+				'Aporo',
+				'Aquila',
+				'Ario',
+				'Arteaga',
+				'Briseñas',
+				'Buenavista',
+				'Carácuaro',
+				'Charapan',
+				'Charo',
+				'Chavinda',
+				'Cherán',
+				'Chilchota',
+				'Chinicuila',
+				'Chucándiro',
+				'Churintzio',
+				'Churumuco',
+				'Coahuayana',
+				'Coalcomán de Vázquez Pallares',
+				'Coeneo',
+				'Cojumatlán de Régules',
+				'Contepec',
+				'Copándaro',
+				'Cotija',
+				'Cuitzeo',
+				'Ecuandureo',
+				'Epitacio Huerta',
+				'Erongarícuaro',
+				'Gabriel Zamora',
+				'Hidalgo',
+				'Huandacareo',
+				'Huaniqueo',
+				'Huetamo',
+				'Huiramba',
+				'Indaparapeo',
+				'Irimbo',
+				'Ixtlán',
+				'Jacona',
+				'Jiménez',
+				'Jiquilpan',
+				'José Sixto Verduzco',
+				'Jungapeo',
+				'Juárez',
+				'La Huacana',
+				'La Piedad',
+				'Lagunillas',
+				'Los Reyes',
+				'Lázaro Cárdenas',
+				'Madero',
+				'Maravatío',
+				'Marcos Castellanos',
+				'Morelia',
+				'Morelia (Educación especial)',
+				'Morelos',
+				'Múgica',
+				'Nahuatzen',
+				'Nocupétaro',
+				'Nuevo Parangaricutiro',
+				'Nuevo Urecho',
+				'Numarán',
+				'Ocampo',
+				'Pajacuarán',
+				'Panindícuaro',
+				'Paracho',
+				'Parácuaro',
+				'Penjamillo',
+				'Peribán',
+				'Puruándiro',
+				'Purépero',
+				'Pátzcuaro',
+				'Queréndaro',
+				'Quiroga',
+				'Sahuayo',
+				'Salvador Escalante',
+				'San Lucas',
+				'Santa Ana Maya',
+				'Senguio',
+				'Susupuato',
+				'Tacámbaro',
+				'Tancítaro',
+				'Tangamandapio',
+				'Tangancícuaro',
+				'Tanhuato',
+				'Taretan',
+				'Tarímbaro',
+				'Tepalcatepec',
+				'Tingambato',
+				'Tingüindín',
+				'Tiquicheo de Nicolás Romero',
+				'Tlalpujahua',
+				'Tlazazalca',
+				'Tocumbo',
+				'Tumbiscatío',
+				'Turicato',
+				'Tuxpan',
+				'Tuzantla',
+				'Tzintzuntzan',
+				'Tzitzio',
+				'Uruapan',
+				'Venustiano Carranza',
+				'Villamar',
+				'Vista Hermosa',
+				'Yurécuaro',
+				'Zacapu',
+				'Zamora',
+				'Zinapécuaro',
+				'Zináparo',
+				'Ziracuaretiro',
+				'Zitácuaro',
+				'Álvaro Obregón',
+			];
+		</script>
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			// ! basic
+			// form.classList.add('was-validated');
+
+			function PopulateMunicipio(){
+				for (const m of municipios) {
+					$('#pre-municipio').append(`
+						<option value="${m}">${m}</option>
+					`);
+				}
+
+				// $('#pre-localidad').empty();
+				// let localArr = _mun[0].localidades.sort(compare);
+				// for (const loc of localArr) {
+				// 	$('#pre-localidad').append(`
+				// 		<option value="${loc.nombre}">${loc.nombre}</option>
+				// 	`);
+				// }
+
+				// $('#pre-municipio').change(function (e) { 
+				// 	e.preventDefault();
+				// 	let mun = $('#pre-municipio').val();
+				// 	$('#pre-localidad').empty();
+				// 	// console.log(mun);
+				// 	for (const m of _mun) {
+				// 		if(m.nombre == mun){
+				// 			let localArr = m.localidades.sort(compare);
+				// 			for (const loc of localArr) {
+				// 				$('#pre-localidad').append(`
+				// 					<option value="${loc.nombre}">${loc.nombre}</option>
+				// 				`);
+				// 			}
+				// 			break;
+				// 		}
+				// 	}
+				// });
+			}
+
+			function compare(a, b) {
+				// Use toUpperCase() to ignore character casing
+				const bandA = a.nombre.toUpperCase();
+				const bandB = b.nombre.toUpperCase();
+
+				let comparison = 0;
+				if (bandA > bandB) {
+					comparison = 1;
+				} else if (bandA < bandB) {
+					comparison = -1;
+				}
+				return comparison;
+			}
+
+			$(function () {
+				PopulateMunicipio();
+
+				$('#pre-nivel').change(function (e) { 
+					e.preventDefault();
+					let nivel = $('#pre-nivel').val();
+					$('#pre-subnivel').empty();
+					for (const subnivel of niveles[nivel]) {
+						$('#pre-subnivel').append(`
+						<option value="${subnivel}">${subnivel}</option>
+						`);
+					}
+				});
+
+				$('#pre-puesto').change(function (e) { 
+					e.preventDefault();
+					let puesto = $('#pre-puesto').val();
+					if(puesto == 'Madre/Padre de familia y/o tutor'){
+						$('#pre-cct-opt').removeClass('d-none');
+						$('#pre-rfc-opt').removeClass('d-none');
+						$('#pre-correo-opt').removeClass('d-none');
+
+						$('#pre-cct').attr('required', false);
+						$('#pre-rfc').attr('required', false);
+						$('#pre-correo').attr('required', false);
+
+						$('.hidder-familia').hide();
+					}else{
+						$('#pre-cct-opt').addClass('d-none');
+						$('#pre-rfc-opt').addClass('d-none');
+						$('#pre-correo-opt').addClass('d-none');
+
+						$('#pre-cct').attr('required', true);
+						$('#pre-rfc').attr('required', true);
+						$('#pre-correo').attr('required', true);
+
+						$('.hidder-familia').show();
+					}
+				});
+
+				$('#enviar').click(async function (e) {
+					e.preventDefault();
+					$('#enviar').attr('disabled', true);
+					$('#form-pre-registro').addClass('was-validated');
+
+					// ! Dia
+					const _day = 1;
+					const _sep = 'MAR';
+
+					let dataForm = $('#form-pre-registro').serializeArray();
+					let _data = {};
+					let error = false;
+					let optionalFields = [];
+
+					let puesto = $('#pre-puesto').val();
+					if(puesto == 'Madre/Padre de familia y/o tutor'){
+						optionalFields.push('cct');
+						optionalFields.push('rfc');
+						optionalFields.push('correo');
+					}
+
+					for (const d of dataForm) {
+						_data[d.name] = d.value.trim();
+						if (!optionalFields.includes(d.name)) {
+							if (d.value.trim() == '') {
+								error = true;
+							}
+						}
+					}
+
+					if (error) {
+						Swal.fire('Ingrese todos los campos', '', 'error');
+						$('#enviar').attr('disabled', false);
+						return;
+					}
+
+					_data.celular = _data.celular.replace(/\s+/g, '');
+					_data.dia = _day;
+					_data.sep = _sep;
+
+					// Comprobar registro
+					let checker = await $.ajax({
+						type: "get",
+						url: "./api/registro.php",
+						data: {
+							cel: _data.celular,
+							dia: _day,
+							sep: _sep,
+						},
+						dataType: "json",
+					});
+
+					console.log(checker);
+
+					if(checker.data.length > 0){
+						Swal.fire({
+							title: 'Usted ya se encuentra registrado', 
+							html: 'Su capacitación se llevará a cabo a través de la plataforma ZOOM. Este es el ID de su reunión: <u><b>535 545 8722</b><u/>', 
+							icon: 'success'
+						});
+						$('#enviar').attr('disabled', false);
+						return;
+					}
+
+					console.log(_data);
+
+					let res = await $.ajax({
+						type: 'post',
+						url: './api/registro.php',
+						data: {
+							data: _data,
+						},
+						dataType: 'json',
+					});
+
+					console.log(res);
+
+					if (res.error) {
+						Swal.fire('Ocurrió un error', 'Vuelva a intentarlo', 'error');
+						$('#enviar').attr('disabled', false);
+					} else {
+						// let noty = await Swal.fire('Registro exitoso', 'Esta es el ID de su reunión: <b>53 554 58722</b>', 'success');
+						let noty = await Swal.fire({
+							title: 'Registro exitoso', 
+							html: 'Su capacitación se llevará a cabo a través de la plataforma ZOOM. Este es el ID de su reunión: <u><b>535 545 8722</b><u/>', 
+							icon: 'success'
+						});
+						location.reload(true);
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

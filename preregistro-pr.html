@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Language" content="en" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>PNCE PRE-REGISTRO</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<!-- Disable tap highlight on IE -->
+
+		<meta name="msapplication-tap-highlight" content="no" />
+		<link href="./styles.css" rel="stylesheet" />
+		<link href="./custom-style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+			<div class="app-main pt-0">
+				<div class="app-main__outer">
+					<div class="app-main__inner">
+						<div class="tab-content mx-auto" style="max-width: 500px">
+							<div class="col-md-12">
+								<div class="tab-pane tabs-animation fade show active" id="tab-content-1" role="tabpanel">
+									<div class="main-card mb-3 card">
+										<div class="card-body px-0">
+											<div class="container">
+												<div class="py-3 text-center">
+													<img class="ml-2 mb-4" src="./asset/pnce-logo-2020.png" alt="" width="120" height="70" />
+													<p class="lead"></p>
+												</div>
+
+												<div class="row justify-content-center text-center">
+													<div class="col-12">
+														<h5 class="mb-3">"Inclusión" y "Feminidades y masculinidades"</h5>
+														<h6 class="mb-3">Registro para el taller del día viernes 4 de diciembre 2020</h6>
+
+														<div class="divider-extra mb-3 mx-auto"></div>
+
+														<div class="row text-center" id="registro-cerrar">
+															<h1 class="font-weight-bold mx-auto" id="registro-cerrado">Cargando...</h1>
+														</div>
+
+														<form id="form-pre-registro" style="display: none;" class="needs-validation" novalidate>
+															<div class="row">
+																<div class="col-12 mb-3">
+																	<div class="form-group">
+																		<label for="nombre">Nombre completo</label>
+																		<input name="nombre" type="text" class="form-control text-center" id="pre-nombre" placeholder="..." autofocus required />
+																		<!-- <small class="form-text text-muted">Extra small text</small> -->
+																	</div>
+
+																	<div class="form-group">
+																		<label for="genero">Género</label>
+																		<select name="genero" id="pre-genero" class="form-control text-center">
+																			<option value="Femenino">Femenino</option>
+																			<option value="Masculino">Masculino</option>
+																			<option value="Otro">Otro</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="puesto">Función</label>
+																		<select name="puesto" id="pre-puesto" class="form-control text-center">
+																			<option value="Jefa/e de sector">Jefa/e de sector</option>
+																			<option value="Supervisora/or">Supervisora/or</option>
+																			<option value="Jefa/e de Enseñanza">Jefa/e de Enseñanza</option>
+																			<option value="Asesora/or Técnico Pedagógico">Asesora/or Técnico Pedagógico</option>
+																			<option value="Directiva/o">Directiva/o</option>
+																			<option value="Docente">Docente</option>
+																			<option value="Madre/Padre de familia y/o tutor">Madre/Padre de familia y/o tutor</option>
+																			<option value="Otro">Otro</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="rfc">RFC o CURP</label>
+																		<input name="rfc" type="text" class="form-control text-center" id="pre-rfc" placeholder="..." required/>
+																		<small class="form-text text-muted d-none" id="pre-rfc-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="celular">Celular</label>
+																		<input name="celular" type="tel" class="form-control text-center" id="pre-celular" placeholder="..." required />
+																	</div>
+
+																	<div class="form-group">
+																		<label for="correo">Correo electrónico</label>
+																		<input name="correo" type="text" class="form-control text-center" id="pre-correo" placeholder="..." required />
+																		<small class="form-text text-muted d-none" id="pre-correo-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="cct">CCT</label>
+																		<input name="cct" type="text" class="form-control text-center" id="pre-cct" placeholder="..." required />
+																		<small class="form-text text-muted d-none" id="pre-cct-opt">Opcional</small>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="municipio">Municipio</label>
+																		<select name="municipio" id="pre-municipio" class="form-control text-center">
+																			<option value="Acuitzio">Acuitzio</option>
+																			<option value="Álvaro Obregón">Álvaro Obregón</option>
+																			<option value="Aguililla">Aguililla</option>
+																			<option value="Angamacutiro">Angamacutiro</option>
+																			<option value="Angangueo">Angangueo</option>
+																			<option value="Apatzingán">Apatzingán</option>
+																			<option value="Aporo">Aporo</option>
+																			<option value="Aquila">Aquila</option>
+																			<option value="Ario">Ario</option>
+																			<option value="Arteaga">Arteaga</option>
+																			<option value="Briseñas">Briseñas</option>
+																			<option value="Buenavista">Buenavista</option>
+																			<option value="Carácuaro">Carácuaro</option>
+																			<option value="Charapan">Charapan</option>
+																			<option value="Charo">Charo</option>
+																			<option value="Chavinda">Chavinda</option>
+																			<option value="Cherán">Cherán</option>
+																			<option value="Chilchota">Chilchota</option>
+																			<option value="Chinicuila">Chinicuila</option>
+																			<option value="Chucándiro">Chucándiro</option>
+																			<option value="Churintzio">Churintzio</option>
+																			<option value="Churumuco">Churumuco</option>
+																			<option value="Coahuayana">Coahuayana</option>
+																			<option value="Coalcomán de Vázquez Pallares">Coalcomán de Vázquez Pallares</option>
+																			<option value="Coeneo">Coeneo</option>
+																			<option value="Cojumatlán de Régules">Cojumatlán de Régules</option>
+																			<option value="Contepec">Contepec</option>
+																			<option value="Copándaro">Copándaro</option>
+																			<option value="Cotija">Cotija</option>
+																			<option value="Cuitzeo">Cuitzeo</option>
+																			<option value="Ecuandureo">Ecuandureo</option>
+																			<option value="Epitacio Huerta">Epitacio Huerta</option>
+																			<option value="Erongarícuaro">Erongarícuaro</option>
+																			<option value="Gabriel Zamora">Gabriel Zamora</option>
+																			<option value="Hidalgo">Hidalgo</option>
+																			<option value="Huandacareo">Huandacareo</option>
+																			<option value="Huaniqueo">Huaniqueo</option>
+																			<option value="Huetamo">Huetamo</option>
+																			<option value="Huiramba">Huiramba</option>
+																			<option value="Indaparapeo">Indaparapeo</option>
+																			<option value="Irimbo">Irimbo</option>
+																			<option value="Ixtlán">Ixtlán</option>
+																			<option value="Jacona">Jacona</option>
+																			<option value="Jiménez">Jiménez</option>
+																			<option value="Jiquilpan">Jiquilpan</option>
+																			<option value="José Sixto Verduzco">José Sixto Verduzco</option>
+																			<option value="Jungapeo">Jungapeo</option>
+																			<option value="Juárez">Juárez</option>
+																			<option value="La Huacana">La Huacana</option>
+																			<option value="La Piedad">La Piedad</option>
+																			<option value="Lagunillas">Lagunillas</option>
+																			<option value="Los Reyes">Los Reyes</option>
+																			<option value="Lázaro Cárdenas">Lázaro Cárdenas</option>
+																			<option value="Madero">Madero</option>
+																			<option value="Maravatío">Maravatío</option>
+																			<option value="Marcos Castellanos">Marcos Castellanos</option>
+																			<option value="Morelia">Morelia</option>
+																			<option value="Morelos">Morelos</option>
+																			<option value="Múgica">Múgica</option>
+																			<option value="Nahuatzen">Nahuatzen</option>
+																			<option value="Nocupétaro">Nocupétaro</option>
+																			<option value="Nuevo Parangaricutiro">Nuevo Parangaricutiro</option>
+																			<option value="Nuevo Urecho">Nuevo Urecho</option>
+																			<option value="Numarán">Numarán</option>
+																			<option value="Ocampo">Ocampo</option>
+																			<option value="Pajacuarán">Pajacuarán</option>
+																			<option value="Panindícuaro">Panindícuaro</option>
+																			<option value="Paracho">Paracho</option>
+																			<option value="Parácuaro">Parácuaro</option>
+																			<option value="Penjamillo">Penjamillo</option>
+																			<option value="Peribán">Peribán</option>
+																			<option value="Puruándiro">Puruándiro</option>
+																			<option value="Purépero">Purépero</option>
+																			<option value="Pátzcuaro">Pátzcuaro</option>
+																			<option value="Queréndaro">Queréndaro</option>
+																			<option value="Quiroga">Quiroga</option>
+																			<option value="Sahuayo">Sahuayo</option>
+																			<option value="Salvador Escalante">Salvador Escalante</option>
+																			<option value="San Lucas">San Lucas</option>
+																			<option value="Santa Ana Maya">Santa Ana Maya</option>
+																			<option value="Senguio">Senguio</option>
+																			<option value="Susupuato">Susupuato</option>
+																			<option value="Tacámbaro">Tacámbaro</option>
+																			<option value="Tancítaro">Tancítaro</option>
+																			<option value="Tangamandapio">Tangamandapio</option>
+																			<option value="Tangancícuaro">Tangancícuaro</option>
+																			<option value="Tanhuato">Tanhuato</option>
+																			<option value="Taretan">Taretan</option>
+																			<option value="Tarímbaro">Tarímbaro</option>
+																			<option value="Tepalcatepec">Tepalcatepec</option>
+																			<option value="Tingambato">Tingambato</option>
+																			<option value="Tingüindín">Tingüindín</option>
+																			<option value="Tiquicheo de Nicolás Romero">Tiquicheo de Nicolás Romero</option>
+																			<option value="Tlalpujahua">Tlalpujahua</option>
+																			<option value="Tlazazalca">Tlazazalca</option>
+																			<option value="Tocumbo">Tocumbo</option>
+																			<option value="Tumbiscatío">Tumbiscatío</option>
+																			<option value="Turicato">Turicato</option>
+																			<option value="Tuxpan">Tuxpan</option>
+																			<option value="Tuzantla">Tuzantla</option>
+																			<option value="Tzintzuntzan">Tzintzuntzan</option>
+																			<option value="Tzitzio">Tzitzio</option>
+																			<option value="Uruapan">Uruapan</option>
+																			<option value="Venustiano Carranza">Venustiano Carranza</option>
+																			<option value="Villamar">Villamar</option>
+																			<option value="Vista Hermosa">Vista Hermosa</option>
+																			<option value="Yurécuaro">Yurécuaro</option>
+																			<option value="Zacapu">Zacapu</option>
+																			<option value="Zamora">Zamora</option>
+																			<option value="Zinapécuaro">Zinapécuaro</option>
+																			<option value="Zináparo">Zináparo</option>
+																			<option value="Ziracuaretiro">Ziracuaretiro</option>
+																			<option value="Zitácuaro">Zitácuaro</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="localidad">Localidad</label>
+																		<input name="localidad" type="text" class="form-control text-center" id="pre-localidad" placeholder="..." required />
+																		<!-- <select name="localidad" id="pre-localidad" class="form-control text-center">
+																		</select> -->
+																	</div>
+
+																	<div class="form-group hidder-familia">
+																		<label for="nivel">Nivel escolar</label>
+																		<select name="nivel" id="pre-nivel" class="form-control text-center">
+																			<option value="Preescolar">Preescolar</option>
+																			<option value="Primaria">Primaria</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group hidder-familia">
+																		<label for="subnivel">Subnivel</label>
+																		<select name="subnivel" id="pre-subnivel" class="form-control text-center">
+																			<option value="General">General</option>
+																			<option value="Indígena">Indígena</option>
+																		</select>
+																	</div>
+
+																	<div class="form-group">
+																		<label for="sector">Sector</label>
+																		<input name="sector" type="number" class="form-control text-center" id="pre-sector" max="51" min="0" placeholder="..." required />
+																	</div>
+
+																	<div class="form-group">
+																		<label for="zona">Zona</label>
+																		<input name="zona" type="text" class="form-control text-center" id="pre-zona" placeholder="..." required />
+																	</div>
+
+																</div>
+															</div>
+
+															<div class="row justify-content-center mt-2">
+																<div class="col-12 col-md-8">
+																	<input disabled type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																</div>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<div class="divider-extra my-3 mx-auto"></div>
+												<!-- <div class="text-center">
+													<p style="font-size: 20px;">
+														Conoce 
+														<a class="font-weight-bold" href="./validacion.html" target="_blank">aquí</a> 
+														el ID de tu sesión de ZOOM
+													</p>
+												</div>
+												<div class="divider-extra mx-auto"></div> -->
+
+												<footer class="my-3 text-muted text-center text-small">
+													<!-- <p class="mb-1">© 2020 E-ADVISORS</p> -->
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			label {
+				font-size: 1rem;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.divider-extra {
+				width: 50%;
+				height: 1px;
+				background-color: #ced4da;
+			}
+
+			.k-radio:checked + .k-radio-label::after {
+				top: 2px !important;
+				left: 2px !important;
+			}
+
+			.k-radio-label {
+				margin-right: 20px;
+				margin-bottom: 0px;
+			}
+
+			@media (max-width: 575px) {
+				.form-group {
+					margin-bottom: 0px;
+				}
+
+				.form-group .col-sm-4,
+				.form-group .col-sm-10 {
+					margin-bottom: 1rem;
+				}
+			}
+
+			.custom-control-inline.custom-radio.pl-2 {
+				padding-left: 20px !important;
+			}
+
+			@media (max-width: 768px) {
+				.custom-control-inline.custom-radio.pl-2 {
+					flex-direction: column;
+				}
+			}
+
+			@media (max-width: 576px) {
+				.app-main__inner {
+					padding-left: 0px !important;
+					padding-right: 0px !important;
+				}
+			}
+		</style>
+
+		
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+		<script>
+			const _fbConfig = firebaseConfig = {
+				apiKey: "AIzaSyDuxAbpeIZuqs8No_wiPJQLrc6mZvXsb1M",
+				authDomain: "pnce-f967b.firebaseapp.com",
+				databaseURL: "https://pnce-f967b.firebaseio.com",
+				projectId: "pnce-f967b",
+				storageBucket: "pnce-f967b.appspot.com",
+				messagingSenderId: "78250519178",
+				appId: "1:78250519178:web:9300a88cb10db71487db73"
+			};
+
+			firebase.initializeApp(_fbConfig);
+
+			async function CheckLimit(){
+				return false;
+				// let dbRef = firebase.database().ref('info/registroPR');
+				// let res = await dbRef.once('value');
+
+				// if(res){
+				// 	let data = res.val();
+				// 	let cantidad = data.cantidad;
+				// 	return cantidad >= 4800;
+				// }
+
+				// return false;
+			}
+
+			async function GetCantidadLimit(){
+				return 0;
+				// let dbRef = firebase.database().ref('info/registroPR');
+				// let res = await dbRef.once('value');
+
+				// if(res){
+				// 	let data = res.val();
+				// 	let cantidad = data.cantidad;
+				// 	return cantidad;
+				// }
+				// return 0;
+			}
+
+			function _6x4gfbs(e){
+				let _m = ['Tacámbaro', 'Huetamo', 'Lázaro Cárdenas', 'Uruapan', 'Pátzcuaro'];
+				return (_m.includes(e))?'535 545 8722':'466 265 8912';
+			}
+
+			$(async function () {
+				$('#enviar').attr('disabled', true);
+
+				let limit = await CheckLimit();
+				if(limit){
+					$('#registro-cerrado').text('Registro cerrado');
+					$('#enviar').attr('disabled', true);
+					$('#enviar').unbind('click');
+					return;
+				}
+
+				$('#registro-cerrar').hide('fast');
+				$('#form-pre-registro').show('fast');
+
+				$('#pre-puesto').change(function (e) { 
+					e.preventDefault();
+					let puesto = $('#pre-puesto').val();
+					if(puesto == 'Madre/Padre de familia y/o tutor'){
+						$('#pre-cct-opt').removeClass('d-none');
+						$('#pre-rfc-opt').removeClass('d-none');
+						$('#pre-correo-opt').removeClass('d-none');
+
+						$('#pre-cct').attr('required', false);
+						$('#pre-rfc').attr('required', false);
+						$('#pre-correo').attr('required', false);
+						$('#pre-zona').attr('required', false);
+						$('#pre-sector').attr('required', false);
+
+						$('.hidder-familia').hide();
+					}else{
+						$('#pre-cct-opt').addClass('d-none');
+						$('#pre-rfc-opt').addClass('d-none');
+						$('#pre-correo-opt').addClass('d-none');
+
+						$('#pre-cct').attr('required', true);
+						$('#pre-rfc').attr('required', true);
+						$('#pre-correo').attr('required', true);
+						$('#pre-zona').attr('required', true);
+						$('#pre-sector').attr('required', true);
+
+						$('.hidder-familia').show();
+					}
+				});
+
+				$('#enviar').click(async function (e) {
+					e.preventDefault();
+
+					$('#enviar').attr('disabled', true);
+					let cant = await GetCantidadLimit();
+					if(cant >= 4800){
+						Swal.fire('Registro cerrado', '', 'warning');
+						return;
+					}
+
+					$('#form-pre-registro').addClass('was-validated');
+
+					// ! Dia
+					const _day = 4;
+					const _sep = 'PRIMARIA-PREESCOLAR-MANUEL';
+
+					let dataForm = $('#form-pre-registro').serializeArray();
+					let _data = {};
+					let error = false;
+					let errorSector = false;
+					let optionalFields = [];
+
+					let puesto = $('#pre-puesto').val();
+					if(puesto == 'Madre/Padre de familia y/o tutor'){
+						optionalFields.push('cct');
+						optionalFields.push('rfc');
+						optionalFields.push('correo');
+						optionalFields.push('zona');
+						optionalFields.push('sector');
+					}else{
+						let sector = $('#pre-sector').val();
+						let parsedSector = parseInt(sector);
+						if(Number.isNaN(parsedSector)){
+							errorSector = true;
+						}else{
+							if(parsedSector < 0 || parsedSector > 50){
+								errorSector = true;
+							}
+						}
+					}
+
+					for (const d of dataForm) {
+						_data[d.name] = d.value.trim();
+						if (!optionalFields.includes(d.name)) {
+							if (d.value.trim() == '') {
+								error = true;
+							}
+						}
+					}
+
+					if (error) {
+						Swal.fire('Ingrese todos los campos', '', 'error');
+						$('#enviar').attr('disabled', false);
+						return;
+					}else if (errorSector) {
+						Swal.fire('Verifique su sector', '', 'error');
+						$('#enviar').attr('disabled', false);
+						return;
+					}
+
+					_data.celular = _data.celular.replace(/\s+/g, '');
+					_data.dia = _day;
+					_data.sep = _sep;
+
+					_data.createdAt = firebase.database.ServerValue.TIMESTAMP;
+
+					let cantidad = await GetCantidadLimit();
+					_data.lugar = cantidad;
+
+					let id = _6x4gfbs(_data.municipio);
+
+					if(puesto == 'Madre/Padre de familia y/o tutor'){
+						_data.nivel = '';
+						_data.subnivel = '';
+						_data.sector = '';
+						_data.zona = '';
+					}
+
+					let uuid = uuidv4();
+					let dbRef = firebase.database();
+					dbRef.ref(`registroPR/${uuid}`).set(_data, async function(errorDB){
+						if(errorDB){
+							Swal.fire('Ocurrió un error', 'Vuelva a intentarlo', 'error');
+							$('#enviar').attr('disabled', false);
+						}else{
+
+							let cantidad = await GetCantidadLimit();
+							await dbRef.ref('info/registroPR').set({
+								cantidad: cantidad+1
+							});
+
+							let noty = await Swal.fire({
+								title: 'Registro exitoso', 
+								html: `Su capacitación se llevará a cabo a través de la plataforma ZOOM.`, 
+								icon: 'success'
+							});
+							location.reload(true);
+						}
+					});
+
+					return;
+
+				});
+			});
+		</script>
+	</body>
+</html>
