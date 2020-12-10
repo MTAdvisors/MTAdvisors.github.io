@@ -207,6 +207,7 @@
 																			<option value="Primaria">Primaria</option>
 																			<option value="Secundaria">Secundaria</option>
 																			<option value="Educación Especial">Educación Especial</option>
+																			<option value="Inicial">Inicial</option>
 																		</select>
 																	</div>
 
@@ -905,7 +906,7 @@
 
 															<div class="row justify-content-center mt-2">
 																<div class="col-12 col-md-8">
-																	<input  type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																	<input disabled type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
 																</div>
 															</div>
 														</form>
@@ -1010,6 +1011,7 @@
 
 		<script>
 			let niveles = {
+				Inicial: ['General'],
 				Preescolar: ['General', 'Indígena'],
 				Primaria: ['General', 'Indígena'],
 				Secundaria: ['General', 'Técnica', 'Tele secundaria'],
@@ -1179,6 +1181,7 @@
 			// form.classList.add('was-validated');
 			$(function () {
 				// PopulateMunicipio();
+				$('#enviar').attr('disabled', true);
 
 				$('#pre-nivel').change(function (e) {
 					e.preventDefault();

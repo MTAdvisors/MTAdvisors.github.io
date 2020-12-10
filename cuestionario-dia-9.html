@@ -249,7 +249,7 @@
 
 															<div class="row justify-content-center mt-2">
 																<div class="col-12 col-md-8">
-																	<input type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
+																	<input disabled type="submit" class="mb-2 mr-2 btn-icon btn btn-primary btn-lg btn-block" value="Enviar" id="enviar" />
 																</div>
 															</div>
 
@@ -372,6 +372,7 @@
 			firebase.initializeApp(_fbConfig);
 
 			$(function () {
+				$('#enviar').attr('disabled', true);
 
 				$('#enviar').click(async function (e) { 
 					e.preventDefault();
