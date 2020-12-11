@@ -34,7 +34,7 @@
 												<div class="row justify-content-center text-center">
 													<div class="col-12">
 														<h5 class="mb-3">Cuestionario del curso "Introducción a la Enseñanza digital", "Habilidades socioemocionales" y "Seguridad Psicológica"</h5>
-														<h6 class="mb-3">Martes 8 de diciembre de 2020</h6>
+														<!-- <h6 class="mb-3">Martes 8 de diciembre de 2020</h6> -->
 
 														<form id="form-pre-registro" class="needs-validation" novalidate>
 															<div class="row">
@@ -358,82 +358,10 @@
 			}
 		</style>
 
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
-
 		<script>
-			const _fbConfig = firebaseConfig = {
-				apiKey: "AIzaSyDuxAbpeIZuqs8No_wiPJQLrc6mZvXsb1M",
-				authDomain: "pnce-f967b.firebaseapp.com",
-				databaseURL: "https://pnce-f967b.firebaseio.com",
-				projectId: "pnce-f967b",
-				storageBucket: "pnce-f967b.appspot.com",
-				messagingSenderId: "78250519178",
-				appId: "1:78250519178:web:9300a88cb10db71487db73"
-			};
-
-			firebase.initializeApp(_fbConfig);
 
 			$(function () {
 				$('#enviar').attr('disabled', true);
-
-				$('#enviar').click(async function (e) { 
-					e.preventDefault();
-					$('#enviar').attr('disabled', true);
-					$('#enviar').val('Enviando...');
-					$('#form-pre-registro').addClass('was-validated');
-					let _data = {};
-					let formData = $('#form-pre-registro').serializeArray();
-
-					if(formData.length < 6){
-						Swal.fire('Conteste todas las preguntas', '', 'error');
-						$('#enviar').attr('disabled', false);
-						return
-					}
-
-					let _ans = {
-						'qst-1': 1,
-						'qst-2': 1,
-						'qst-3': 1,
-						'qst-4': 1,
-						'qst-5': 0,
-					};
-
-					let _score = 0;
-
-					for (const d of formData) {
-						_data[d.name] = d.value;
-
-						if(d.name.includes('qst-')){
-							if(_ans[d.name] == parseInt(d.value)){
-								_score++;
-							}
-						}
-					}
-
-					_data.score = _score;
-					_data.name = 'Día 8';
-
-					console.log(`Data: `, _data);
-					_data.createdAt = firebase.database.ServerValue.TIMESTAMP;
-
-					let uuid = uuidv4();
-					let dbRef = firebase.database();
-					dbRef.ref(`C-PRIMER-DIA/${uuid}`).set(_data, async function(errorDB){
-						if(errorDB){
-							Swal.fire('Ocurrió un error', 'Vuelva a intentarlo', 'error');
-							$('#enviar').val('Enviar');
-							$('#enviar').attr('disabled', false);
-						}else{
-							let noty = await Swal.fire('Cuestionario registrado', `Sus aciertos fueron ${_score} de 5`, 'success');
-							location.reload(true);
-						}
-					});
-					return;
-				});
 			});
 		</script>
 	</body>

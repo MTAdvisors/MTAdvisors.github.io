@@ -33,8 +33,7 @@
 
 												<div class="row justify-content-center text-center">
 													<div class="col-12">
-														<h5 class="mb-3">"Inclusión" y "Feminidades y masculinidades"</h5>
-														<h6 class="mb-3">Registro para el taller del día viernes 4 de diciembre 2020</h6>
+														<h5 class="mb-3">"Padres y docentes educación compartida", "Inclusión" y "Feminidades y masculinidades"</h5>
 
 														<div class="divider-extra mb-3 mx-auto"></div>
 
@@ -262,17 +261,8 @@
 												</div>
 
 												<div class="divider-extra my-3 mx-auto"></div>
-												<!-- <div class="text-center">
-													<p style="font-size: 20px;">
-														Conoce 
-														<a class="font-weight-bold" href="./validacion.html" target="_blank">aquí</a> 
-														el ID de tu sesión de ZOOM
-													</p>
-												</div>
-												<div class="divider-extra mx-auto"></div> -->
 
 												<footer class="my-3 text-muted text-center text-small">
-													<!-- <p class="mb-1">© 2020 E-ADVISORS</p> -->
 												</footer>
 											</div>
 										</div>
@@ -339,55 +329,19 @@
 
 		
 		<script type="text/javascript" src="./js/jquery.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
 
 		<script>
-			const _fbConfig = firebaseConfig = {
-				apiKey: "AIzaSyDuxAbpeIZuqs8No_wiPJQLrc6mZvXsb1M",
-				authDomain: "pnce-f967b.firebaseapp.com",
-				databaseURL: "https://pnce-f967b.firebaseio.com",
-				projectId: "pnce-f967b",
-				storageBucket: "pnce-f967b.appspot.com",
-				messagingSenderId: "78250519178",
-				appId: "1:78250519178:web:9300a88cb10db71487db73"
-			};
-
-			firebase.initializeApp(_fbConfig);
 
 			async function CheckLimit(){
 				return false;
-				// let dbRef = firebase.database().ref('info/registroPR');
-				// let res = await dbRef.once('value');
-
-				// if(res){
-				// 	let data = res.val();
-				// 	let cantidad = data.cantidad;
-				// 	return cantidad >= 4800;
-				// }
-
-				// return false;
 			}
 
 			async function GetCantidadLimit(){
-				return 0;
-				// let dbRef = firebase.database().ref('info/registroPR');
-				// let res = await dbRef.once('value');
-
-				// if(res){
-				// 	let data = res.val();
-				// 	let cantidad = data.cantidad;
-				// 	return cantidad;
-				// }
-				// return 0;
 			}
 
 			function _6x4gfbs(e){
 				let _m = ['Tacámbaro', 'Huetamo', 'Lázaro Cárdenas', 'Uruapan', 'Pátzcuaro'];
-				return (_m.includes(e))?'535 545 8722':'466 265 8912';
+				return (_m.includes(e))?'-':'-';
 			}
 
 			$(async function () {
@@ -434,109 +388,6 @@
 					}
 				});
 
-				$('#enviar').click(async function (e) {
-					e.preventDefault();
-
-					$('#enviar').attr('disabled', true);
-					let cant = await GetCantidadLimit();
-					if(cant >= 4800){
-						Swal.fire('Registro cerrado', '', 'warning');
-						return;
-					}
-
-					$('#form-pre-registro').addClass('was-validated');
-
-					// ! Dia
-					const _day = 4;
-					const _sep = 'PRIMARIA-PREESCOLAR-MANUEL';
-
-					let dataForm = $('#form-pre-registro').serializeArray();
-					let _data = {};
-					let error = false;
-					let errorSector = false;
-					let optionalFields = [];
-
-					let puesto = $('#pre-puesto').val();
-					if(puesto == 'Madre/Padre de familia y/o tutor'){
-						optionalFields.push('cct');
-						optionalFields.push('rfc');
-						optionalFields.push('correo');
-						optionalFields.push('zona');
-						optionalFields.push('sector');
-					}else{
-						let sector = $('#pre-sector').val();
-						let parsedSector = parseInt(sector);
-						if(Number.isNaN(parsedSector)){
-							errorSector = true;
-						}else{
-							if(parsedSector < 0 || parsedSector > 50){
-								errorSector = true;
-							}
-						}
-					}
-
-					for (const d of dataForm) {
-						_data[d.name] = d.value.trim();
-						if (!optionalFields.includes(d.name)) {
-							if (d.value.trim() == '') {
-								error = true;
-							}
-						}
-					}
-
-					if (error) {
-						Swal.fire('Ingrese todos los campos', '', 'error');
-						$('#enviar').attr('disabled', false);
-						return;
-					}else if (errorSector) {
-						Swal.fire('Verifique su sector', '', 'error');
-						$('#enviar').attr('disabled', false);
-						return;
-					}
-
-					_data.celular = _data.celular.replace(/\s+/g, '');
-					_data.dia = _day;
-					_data.sep = _sep;
-
-					_data.createdAt = firebase.database.ServerValue.TIMESTAMP;
-
-					let cantidad = await GetCantidadLimit();
-					_data.lugar = cantidad;
-
-					let id = _6x4gfbs(_data.municipio);
-
-					if(puesto == 'Madre/Padre de familia y/o tutor'){
-						_data.nivel = '';
-						_data.subnivel = '';
-						_data.sector = '';
-						_data.zona = '';
-					}
-
-					let uuid = uuidv4();
-					let dbRef = firebase.database();
-					dbRef.ref(`registroPR/${uuid}`).set(_data, async function(errorDB){
-						if(errorDB){
-							Swal.fire('Ocurrió un error', 'Vuelva a intentarlo', 'error');
-							$('#enviar').attr('disabled', false);
-						}else{
-
-							let cantidad = await GetCantidadLimit();
-							await dbRef.ref('info/registroPR').set({
-								cantidad: cantidad+1
-							});
-
-							let noty = await Swal.fire({
-								title: 'Registro exitoso', 
-								html: `Su capacitación se llevará a cabo a través de la plataforma ZOOM.`, 
-								icon: 'success'
-							});
-							location.reload(true);
-						}
-					});
-
-					return;
-
-				});
 			});
 		</script>
 	</body>
